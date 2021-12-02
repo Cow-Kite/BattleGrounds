@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <meta charset="UTF-8">
         <title>TOCHUK</title>
         <link rel="stylesheet" href="">
@@ -25,9 +26,38 @@
           tbody tr:nth-child(2n+1) {
             background-color: #FFFFFF;
           }
+          .right{
+          float:left;
+          }
+          .first{
+            float: left;
+            padding: 15px;
+            margin-top: 10px;
+          }
         </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     </head>
     <body>
+      <span class="first">
+        <a href="../index.html"><img src="../images/배그는 즐거워 최종본.png" width="200px"></a>
+      </span>
+      <div class="container" class="right">
+          <div class="row">
+            <div class="col">
+              <h1>TOCHUK</h1>
+              <button type="button" class="btn btn-outline-primary btn-lg button2" onclick="location.href='../PISTOL/pistol.html'">PISTOL</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg button1" onclick="location.href='../SMG/SMG.html'">SMG</button>
+              <button type="button" class="btn btn-outline-success btn-lg button1" onclick="location.href='../AR/AR.html'">AR</button>
+              <button type="button" class="btn btn-outline-danger btn-lg button1" onclick="location.href='../DMR/DMR.html'">DMR</button>
+              <button type="button" class="btn btn-outline-warning btn-lg button1" onclick="location.href='../SR/SR.html'">SR</button>
+              <button type="button" class="btn btn-outline-info btn-lg button1" onclick="location.href='../SG/SG.html'">SG</button>
+              <button type="button" class="btn btn-outline-dark btn-lg button1" onclick="location.href='../TOCHUK/TOCHUK.html'">투척</button>
+            </div>
+          </div>
+        </div>
+        <br>
         <table border="1" cellspacing="0" cellpadding="0">
            <thead>
             <tr>
@@ -42,7 +72,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="TOCHUK_images/수류탄.png" width="100" height="100"></td>
                 <td>수류탄</td>
                 <td>-</td>
@@ -52,7 +82,7 @@
                 <td>-</td>
                 <td>-</td>
             </tr>    
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
               <td><img src="TOCHUK_images/화염병.png" width="100" height="100"></td>
               <td>화염병</td>
               <td>-</td>
@@ -62,7 +92,7 @@
               <td>-</td>
               <td>-</td>
            </tr>    
-           <tr>
+           <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
              <td><img src="TOCHUK_images/연막탄.png" width="100" height="100"></td>
              <td>연막탄</td>
              <td>-</td>
@@ -72,7 +102,7 @@
              <td>-</td>
              <td>-</td>
           </tr>    
-          <tr>
+          <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
             <td><img src="TOCHUK_images/섬광탄.png" width="100" height="100"></td>
             <td>섬광탄</td>
             <td>-</td>
@@ -82,7 +112,7 @@
             <td>-</td>
             <td>-</td>
           </tr>    
-          <tr>
+          <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
            <td><img src="TOCHUK_images/스파이크트랩.png" width="100" height="100"></td>
            <td>스파이크 트랩</td>
            <td>-</td>
@@ -92,7 +122,7 @@
            <td>-</td>
            <td>-</td>
           </tr>    
-          <tr>
+          <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
             <td><img src="TOCHUK_images/점착 폭탄.png" width="100" height="100"></td>
             <td>점착폭탄</td>
             <td>-</td>
@@ -102,7 +132,7 @@
             <td>-</td>
             <td>-</td>
            </tr>    
-           <tr>
+           <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
             <td><img src="TOCHUK_images/C4.png" width="100" height="100"></td>
             <td>C4</td>
             <td>-</td>
@@ -112,7 +142,7 @@
             <td>-</td>
             <td>-</td>
            </tr>    
-           <tr>
+           <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
             <td><img src="TOCHUK_images/교란수류탄.png" width="100" height="100"></td>
             <td>교란 수류탄</td>
             <td>-</td>
@@ -122,7 +152,7 @@
             <td>-</td>
             <td>-</td>
            </tr>    
-           <tr>
+           <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
             <td><img src="TOCHUK_images/블루존 수류탄.png" width="100" height="100"></td>
             <td>블루존 수류탄</td>
             <td>-</td>

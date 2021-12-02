@@ -11,41 +11,73 @@
           margin-right: auto;
           margin-top:50px;
         }
-        /* 검색 */
-        .search{
-        display:block;
-        height:50px; 
-        width:500px;  
-        background: #ffffff;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-       }
        /* 카드 */
        .card{
          border: 1px;
        }
+
+       .body{
+         margin: auto;
+       }
+
+       /* footer */
+       #footer{
+         clear: both;
+         width: 100%;
+         height: 100px;
+         background-color:#f9f9f9;
+       }
+
+       #footer .copyright{
+         float: left;
+         width: 50%;
+       }
+
+       #footer .copyright p{
+         font-size: 14px;
+         color: #999;
+         padding: 32px 0 0 40px;
+       }
+
+       #footer .address{
+         float: right;
+         width: 50%;
+       }
+
+       #footer .address p {
+         font-size: 15px;
+         color: #999;
+         padding: 32px 40px 0 0;
+         text-align: right;
+       }
+
+       .buttons{
+         text-align: center;
+         margin-top: 20px;
+         margin-bottom: 30px;
+       }
       </style>
       
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>	
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>   
     </head>
     <body>
-        <!-- 배그는 즐거워 -->
-        <div class="head">
-            <a href="index.html">
-              <img src="images/배그는 즐거워 최종본.png" width=750px>
-            </a>
-        </div>
+       <!-- 배그는 즐거워 -->
+       <div class="head">
+        <a href="index.html">
+          <img src="images/배그는 즐거워 최종본.png" width=750px>
+        </a>
+       </div>
+       <div class="buttons">
+        
+          <button type="button" class="btn btn-outline-secondary" style="width: 100px; height: 50px; margin-right: 15px;" onclick="location.href='https\://github.com/Cow-Kite/BattleGrounds'">Git 저장소</button>
+          <button type="button" class="btn btn-outline-secondary" style="width: 100px; height: 50px; margin-right: 15px;" onclick="location.href='HoneyTip/HoneyTip.html'">꿀팁공유</button>
+          <button type="button" class="btn btn-outline-secondary" style="width: 100px; height: 50px; margin-right: 15px;">Q&A</button>
+        
+        </div> 
 
-        <!-- 검색 -->
-        <div style="text-align: center;" class="search">
-          <input type="text" placeholder="검색어 입력" style="width:400px; height:40px;">
-          <button style="height:40px;">검색</button>
-        </div>
-
+       <div class="body-center">
         <!-- 권총 -->
         <div class="card" style="width: 14.28%; float:left;">
             <img src="images/first page/pistol.jpg" class="card-img-top" alt="...">
@@ -115,31 +147,15 @@
             <a href="TOCHUK/TOCHUK.html" class="btn btn-primary">Click</a>
           </div>
         </div>     
-
-        <div>
-          꿀팁을 공유해보자
+      
+      <footer id="footer">
+        <div class = "copyright">
+          <p>강원대학교 SW학습공동체 git은 즐거워팀 <br>팀장 : 이석원 &nbsp;&nbsp;&nbsp; 팀원 : 김동찬 강소연</p>
         </div>
-        <br>
-        <br>
-        <!-- 댓글창 -->
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            
-            var disqus_config = function () {
-              this.page.url = 'https://battlegrounds{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = '{{ page.id }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://battlegrounds.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        <div class="address">
+          <p>@git hub 저장소 : https://github.com/Cow-Kite/BattleGrounds <br> @E-mail address: vkdvkdtjrdnj@naver.com</p>
+        </div>
+      </footer>
     </body>
 </html>

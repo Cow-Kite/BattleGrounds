@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <title>DMR</title>
     <link rel="stylesheet" href="">
@@ -25,9 +26,38 @@
       tbody tr:nth-child(2n+1) {
         background-color: #FFFFFF;
       }
+      .right{
+          float:left;
+      }
+      .first{
+        float: left;
+        padding: 15px;
+        margin-top: 10px;
+      }
     </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <span class="first">
+      <a href="../index.html"><img src="../images/배그는 즐거워 최종본.png" width="200px"></a>
+    </span>
+    <div class="container" class="right">
+        <div class="row">
+          <div class="col">
+            <h1>DMR</h1>
+            <button type="button" class="btn btn-outline-primary btn-lg button2" onclick="location.href='../PISTOL/pistol.html'">PISTOL</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg button1" onclick="location.href='../SMG/SMG.html'">SMG</button>
+            <button type="button" class="btn btn-outline-success btn-lg button1" onclick="location.href='../AR/AR.html'">AR</button>
+            <button type="button" class="btn btn-outline-danger btn-lg button1" onclick="location.href='../DMR/DMR.html'">DMR</button>
+            <button type="button" class="btn btn-outline-warning btn-lg button1" onclick="location.href='../SR/SR.html'">SR</button>
+            <button type="button" class="btn btn-outline-info btn-lg button1" onclick="location.href='../SG/SG.html'">SG</button>
+            <button type="button" class="btn btn-outline-dark btn-lg button1" onclick="location.href='../TOCHUK/TOCHUK.html'">투척</button>
+          </div>
+        </div>
+      </div>
+      <br>
         <table border="1" cellspacing="0" cellpadding="0">
           <thead>
             <tr>
@@ -42,7 +72,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="DMR_images/mk14.png" width="100" height="100"></td>
                 <td>Mk14</td>
                 <td>61</td>
@@ -52,7 +82,7 @@
                 <td>500m</td>
                 <td>20,000</td>
             </tr>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="DMR_images/sks.png" width="100" height="100"></td>
                 <td>SKS</td>
                 <td>53</td>
@@ -62,7 +92,7 @@
                 <td>400m</td>
                 <td>20,000</td>
             </tr>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="DMR_images/VSS.png" width="100" height="100"></td>
                 <td>VSS</td>
                 <td>41</td>
@@ -72,7 +102,7 @@
                 <td>250m</td>
                 <td>20,000</td>
             </tr>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="DMR_images/미니14.png" width="100" height="100"></td>
                 <td>Mini14</td>
                 <td>46</td>
@@ -82,7 +112,7 @@
                 <td>400m</td>
                 <td>10,000</td>
             </tr>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="DMR_images/SLR.png" width="100" height="100"></td>
                 <td>SLR</td>
                 <td>58</td>
@@ -92,7 +122,7 @@
                 <td>500m</td>
                 <td>20,000</td>
             </tr>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="DMR_images/QBU.png" width="100" height="100"></td>
                 <td>QBU</td>
                 <td>48</td>
@@ -102,7 +132,7 @@
                 <td>400m</td>
                 <td>10,000</td>
             </tr>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="DMR_images/링스 amr.png" width="100" height="100"></td>
                 <td>링스 AMR</td>
                 <td>118</td>
@@ -112,7 +142,7 @@
                 <td>400m</td>
                 <td>10,000</td>
             </tr>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="DMR_images/mk12.png" width="100" height="100"></td>
                 <td>Mk12</td>
                 <td>50</td>

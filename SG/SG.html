@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <meta charset="UTF-8">
         <title>SG</title> 
         <link rel="stylesheet" href="">
@@ -25,9 +26,38 @@
           tbody tr:nth-child(2n+1) {
             background-color: #FFFFFF;
           }
+          .right{
+          float:left;
+          }
+          .first{
+            float: left;
+            padding: 15px;
+            margin-top: 10px;
+          }
         </style>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     </head>
     <body>
+      <span class="first">
+        <a href="../index.html"><img src="../images/배그는 즐거워 최종본.png" width="200px"></a>
+      </span>
+      <div class="container" class="right">
+          <div class="row">
+            <div class="col">
+              <h1>SG</h1>
+              <button type="button" class="btn btn-outline-primary btn-lg button2" onclick="location.href='../PISTOL/pistol.html'">PISTOL</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg button1" onclick="location.href='../SMG/SMG.html'">SMG</button>
+              <button type="button" class="btn btn-outline-success btn-lg button1" onclick="location.href='../AR/AR.html'">AR</button>
+              <button type="button" class="btn btn-outline-danger btn-lg button1" onclick="location.href='../DMR/DMR.html'">DMR</button>
+              <button type="button" class="btn btn-outline-warning btn-lg button1" onclick="location.href='../SR/SR.html'">SR</button>
+              <button type="button" class="btn btn-outline-info btn-lg button1" onclick="location.href='../SG/SG.html'">SG</button>
+              <button type="button" class="btn btn-outline-dark btn-lg button1" onclick="location.href='../TOCHUK/TOCHUK.html'">투척</button>
+            </div>
+          </div>
+        </div>
+        <br>
         <table border="1" cellspacing="0" cellpadding="0">
           <thead>
             <tr>
@@ -42,7 +72,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="SG_images/S686.png" width="100" height="100"></td>
                 <td>S686</td>
                 <td>216</td>
@@ -52,7 +82,7 @@
                 <td>80m</td>
                 <td>5,000</td>
             </tr>    
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="SG_images/S12K.png" width="100" height="100"></td>
                 <td>S12K</td>
                 <td>198</td>
@@ -62,7 +92,7 @@
                 <td>65m</td>
                 <td>5,000</td>
             </tr>
-            <tr>
+            <tr onmouseover="this.style.background='orange'" onmouseout="this.style.background='white'">
                 <td><img src="SG_images/S1897.png" width="100" height="100"></td>
                 <td>S1897</td>
                 <td>216</td>
